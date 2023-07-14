@@ -1,0 +1,148 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700 */
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+html{
+	font-size: 62.5%;
+}
+
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --v-dark-d-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    text-align: center;
+    color: var(--dark-grayish-blue);
+}
+
+h1, .stat-container p{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--v-dark-d-blue);
+
+}
+
+main{
+    position: relative;
+    min-height: 100vh; 
+    min-height: 100svh;
+    background-color: var(--dark-cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.pattern-top, .pattern-bottom{
+    position: absolute;
+    width: 800px;
+}
+
+.pattern-top{
+    bottom: 50vh;
+    right: 50vw;
+}
+
+.pattern-bottom{
+    top: 50vh;
+    left: 50vw;
+}
+
+.card{
+    background-color: #fff;
+    width: 326px;
+    height: 374px;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 10;
+    margin: 2rem;
+    box-shadow: 0 3rem 3rem rgba(0,0,0,.15);
+}
+
+.img-container{
+    height: 140px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.img-container > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-picture-container{
+    width: 106px;
+    height: 106px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    bottom: -53px;
+}
+
+.personal-info{
+    margin-bottom: 2.6rem;
+}
+h1{
+    margin-bottom: 1rem;
+}
+
+h1 span{
+    font-weight: 400;
+    color: var(--dark-gray);
+    margin-left: 1rem;
+}
+
+.country{
+    font-size: 1.4rem;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem;
+    border-top: 1px solid #e4e4e4;
+}
+
+.stat-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.stat-container h2{
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    margin-top: 3px;
+}
+
+
+
